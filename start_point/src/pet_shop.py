@@ -34,4 +34,19 @@ def find_pet_by_name(pets, name):
             return pet
 
 def remove_pet_by_name(pets, name):
-    pets.pop(name)
+    for pet in pets["pets"]:
+        if pet["name"] == name:
+            del pets["pets"][3]
+
+def add_pet_to_stock(pets,new_pet):
+    pets["pets"].append(new_pet)
+
+def get_customer_cash(customers):
+    return customers["cash"]
+
+
+def remove_customer_cash(customers,cash):
+    customers["cash"] -= cash
+
+def get_customer_pet_count(customers):
+    return len(customers["pets"])
