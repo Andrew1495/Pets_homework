@@ -61,7 +61,17 @@ def customer_can_afford_pet(customer, pet):
     else:
         return False
 
-def  sell_pet_to_customer(list_of_pets, pet, customer):
-    for index_pets in list_of_pets:
-        if index_pets["name"] == pet:
-            customer["pets"].append(index_pet)
+def sell_pet_to_customer(list_of_pets, pet_name, customer):
+    
+
+
+
+
+
+    # for i ,pets in enumerate(list_of_pets["pets"]):
+    #     if pets["name"] == pet_name and customer["cash"] >= pets["price"]:
+    #         customer["cash"] -= pets["price"]
+    #         list_of_pets["admin"]["total_cash"] += pets["price"]
+    #         list_of_pets["admin"]["pets_sold"] + 1
+    #         customer["pets"].append(list_of_pets)["pets"][i]
+    #         del list_of_pets["pets"][i]
