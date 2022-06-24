@@ -34,9 +34,9 @@ def find_pet_by_name(pets, name):
             return pet
 
 def remove_pet_by_name(pets, name):
-    for pet in pets["pets"]:
+    for i, pet in enumerate(pets["pets"]):
         if pet["name"] == name:
-            del pets["pets"][3]
+            del pets["pets"][i]
 
 def add_pet_to_stock(pets,new_pet):
     pets["pets"].append(new_pet)
