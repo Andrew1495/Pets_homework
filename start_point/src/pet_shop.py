@@ -50,3 +50,18 @@ def remove_customer_cash(customers,cash):
 
 def get_customer_pet_count(customers):
     return len(customers["pets"])
+
+def add_pet_to_customer(customers, new_pet):
+    customers["pets"].append(new_pet)
+
+
+def customer_can_afford_pet(customer, pet):
+    if customer["cash"] >= pet["price"]:
+        return True
+    else:
+        return False
+
+def  sell_pet_to_customer(list_of_pets, pet, customer):
+    for index_pets in list_of_pets:
+        if index_pets["name"] == pet:
+            customer["pets"].append(index_pet)
